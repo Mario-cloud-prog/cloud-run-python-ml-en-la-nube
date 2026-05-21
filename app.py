@@ -49,8 +49,8 @@ def load_model_from_gcs(bucket_name, source_blob):
 # =========================================================
 # PARÁMETROS
 # =========================================================
-bucket_name = st.text_input("Bucket de GCS:", "bucket_131025")
-prefix = st.text_input("Prefijo/carpeta:", "tlc_yellow_trips_2022/")
+bucket_name = st.text_input("Bucket de GCS:", "bucket-grandes-datos-150426")
+prefix = st.text_input("Prefijo/carpeta:", "")
 limite = st.number_input("Filas a procesar por archivo:", value=1000, step=100)
 
 MODEL_PATH = "models/model_incremental.pkl"
